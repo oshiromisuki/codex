@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Subscription Manager</title>
+</head>
+<body>
+  <h1>Subscription Manager</h1>
+  <div id="auth">
+    <h2>Login</h2>
+    <input id="username" placeholder="username">
+    <input id="password" type="password" placeholder="password">
+    <button onclick="login()">Login</button>
+    <button onclick="signup()">Signup</button>
+  </div>
+  <div id="app" style="display:none">
+    <h2>Subscriptions</h2>
+    <ul id="subs"></ul>
+    <h3>Add Subscription</h3>
+    <input id="name" placeholder="Name">
+    <input id="amount" placeholder="Amount">
+    <input id="currency" placeholder="Currency (USD/JPY)">
+    <input id="paymentDate" placeholder="Payment Date yyyy-mm-dd">
+    <input id="renewalDate" placeholder="Renewal Date yyyy-mm-dd">
+    <input id="category" placeholder="Category">
+    <button onclick="addSub()">Add</button>
+    <h3>Notifications</h3>
+    <ul id="notify"></ul>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
